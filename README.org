@@ -1,6 +1,0 @@
-* .emacs.d
-** DONE gruvbox
-** DONE auctex
-** DONE cdlatex
-** DONE pdf-tools
-** TODO preview fragments in auctex???
