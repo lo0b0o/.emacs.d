@@ -1,1 +1,8 @@
-# .emacs.d
+* .emacs.d
+- gruvbox
+- auctex(preview embedded)
+- cdlatex
+- pdf-tools
+- auto-completion
+- ac-math
+

@@ -1,2 +1,4 @@
-((("gruvbox-theme" .
+((("mathbf" .
+   [1 0 0 0 0 0])
+  ("gruvbox-theme" .
    [0 0 0 0 0 0 0 0 0 0 0 0 1])))
