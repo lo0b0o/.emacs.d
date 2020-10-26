@@ -70,17 +70,27 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   (quote
-    ("8f97d5ec8a774485296e366fdde6ff5589cf9e319a584b845b6f7fa788c9fa9a" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" default)))
+   '("aded61687237d1dff6325edb492bde536f40b048eab7246c61d5c6643c696b7f" "8f97d5ec8a774485296e366fdde6ff5589cf9e319a584b845b6f7fa788c9fa9a" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" default))
+ '(org-agenda-files '("d:/OneDrive - mail.ustc.edu.cn/schedule.org"))
  '(package-selected-packages
-   (quote
-    (gruvbox-theme cdlatex ac-math auto-complete pdf-tools yasnippet auctex spacemacs-theme))))
+   '(ess gruvbox-theme cdlatex ac-math auto-complete pdf-tools yasnippet auctex spacemacs-theme)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+; Parentheses
+(use-package highlight-parentheses
+  :ensure t
+  :config
+  (progn
+    (highlight-parentheses-mode)
+    (global-highlight-parentheses-mode))
+  )
+ 
+
 (load-theme 'gruvbox-dark-medium)
 
 (put 'upcase-region 'disabled nil)
