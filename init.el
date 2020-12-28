@@ -6,6 +6,7 @@
                          ("melpa-stable" . "https://mirrors.ustc.edu.cn/elpa/melpa-stable/")
                          ("org" . "https://mirrors.ustc.edu.cn/elpa/org/")))
 
+
  	
 (setq TeX-auto-save t)
 (setq TeX-parse-self t)
@@ -70,7 +71,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("aded61687237d1dff6325edb492bde536f40b048eab7246c61d5c6643c696b7f" "8f97d5ec8a774485296e366fdde6ff5589cf9e319a584b845b6f7fa788c9fa9a" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" default))
+   '("123a8dabd1a0eff6e0c48a03dc6fb2c5e03ebc7062ba531543dfbce587e86f2a" "a06658a45f043cd95549d6845454ad1c1d6e24a99271676ae56157619952394a" "aded61687237d1dff6325edb492bde536f40b048eab7246c61d5c6643c696b7f" "8f97d5ec8a774485296e366fdde6ff5589cf9e319a584b845b6f7fa788c9fa9a" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" default))
  '(org-agenda-files '("d:/OneDrive - mail.ustc.edu.cn/schedule.org"))
  '(package-selected-packages
    '(ess gruvbox-theme cdlatex ac-math auto-complete pdf-tools yasnippet auctex spacemacs-theme)))
@@ -89,8 +90,11 @@
     (highlight-parentheses-mode)
     (global-highlight-parentheses-mode))
   )
- 
+;; ess mode
+(require 'ess-smart-underscore)
 
-(load-theme 'gruvbox-dark-medium)
+(setq-default ispell-program-name "aspell")
+
+(load-theme 'gruvbox-light-soft)
 
 (put 'upcase-region 'disabled nil)
